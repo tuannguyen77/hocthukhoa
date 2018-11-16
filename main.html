@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Responsive-->
+    <title>Học thủ khoa VN</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="w3.css">
+    <!--W3CSS-->
+    <!--FontAwesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <div style="background-image: url('laptop.png'); background-size: cover; background-repeat: no-repeat; background-position:center center">
+        <div class="w3-row w3-padding-32 w3-mobile" style="margin-left:40px">
+            <div class="w3-col " style="width:25%; margin-top:20px">
+                <a href="main.html">
+                    <img src="logo.png" style="width:80%">
+                </a>
+            </div>
+            <div class="w3-col link-menu" style="width:15%">
+                <a href="#" class="text-menu">Thầy cô khóa học</a>
+            </div>
+            <div class="w3-col link-menu" style="width:15%">
+                <a href="#" class="text-menu">Học phí</a>
+            </div>
+            <div class="w3-col link-menu" style="width:15%">
+                <a href="#" class="text-menu">Đánh giá</a>
+            </div>
+        </div>
+
+        <div class="w3-row" style="height:600px; margin-left:40px">
+            <div class="w3-half">
+                <div class="center">
+                    <div>
+                        <p>KHÓA HỌC TỐT LỚP 5 - BỨT PHÁ NĂM HỌC MỚI 2019</p>
+                    </div>
+                    <div>
+                        <p>Học trực tuyến đầy đủ các môn học trên lớp</p>
+                        <p>Thầy cô giáo là giáo viên dạy giỏi thành phố Hà Nội</p>
+                        <p>Làm bài tập tự luận như trên lớp - Thầy cô chấm điểm trực tiếp</p>
+                    </div>
+                    <div>
+                        <p>Học phí chỉ từ <span style="color: orange">20000đ/1 buổi</span></p>
+                        <button href="#">Bài giảng học thử</button>
+                        <button href="#">Tư vấn miễn phí</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="w3-display-container w3-padding-64">
+        <div class="w3-display-middle">
+            <h3>Học trực tuyến cùng thầy cô giáo nổi tiếng</h3>
+        </div>
+    </div>
+
+    <div class="w3-container w3-padding-48 w3-grayscale-min w3-center" style="height:700px">
+        <div class="w3-content">
+            <div class="w3-sidebar w3-bar-block w3-card w3-display-container" style="width:200px; height:600px">
+                <div class="w3-display-left">
+                    <button class="w3-bar-item w3-button tablink" style="width:200px; height:100px" onclick="openLink(event, 'toan')">TOÁN</button>
+                    <button class="w3-bar-item w3-button tablink" style="width:200px; height:100px" onclick="openLink(event, 'van')">NGỮ
+                        Văn</button>
+                    <button class="w3-bar-item w3-button tablink" style="width:200px; height:100px" onclick="openLink(event, 'tieng-anh')">TIẾNG
+                        ANH</button>
+                </div>
+            </div>
+
+            <div style="margin-left:130px">
+                <div id="toan" class="w3-container subject w3-animate-zoom" style="display:none">
+                    <p>*Insert toan content here</p>
+                </div>
+                <div id="van" class="w3-container subject w3-animate-zoom" style="display:none">
+                    <p>*Insert van content here</p>
+                </div>
+                <div id="tieng-anh" class="w3-container subject w3-animate-zoom" style="display:none">
+                    <p>*Insert tieng-anh content here</p>
+                </div>
+            </div>
+
+            <script>
+                function openLink(evt, animName) {
+                    var i, x, tablinks;
+                    x = document.getElementsByClassName("subject");
+                    for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";
+                    }
+                    tablinks = document.getElementsByClassName("tablink");
+                    for (i = 0; i < x.length; i++) {
+                        tablinks[i].className = tablinks[i].className.replace(" w3-green", "");
+                    }
+                    document.getElementById(animName).style.display = "block";
+                    evt.currentTarget.className += " w3-green";
+                }
+            </script>
+        </div>
+    </div>
+
+    <div id="id01">
+        <div class="w3-card-4" style="margin-left:40px; margin-right:40px">
+            <div class="w3-container w3-white w3-center">
+                <h3>Đăng ký nhận tư vấn</h3>
+                <form action="/form_answer.php" target="_self" method="post">
+                    <div class="w3-row w3-margin">
+                        <div class="w3-third">
+                            <label for="hoten">*Họ tên: </label>
+                            <input class="w3-input w3-border" id="hoten" type="text" placeholder="Name(s)" name="hoten">
+                        </div>
+                        <div class="w3-third">
+                            <label for="dienthoai">*Số điện thoại: </label>
+                            <input class="w3-input w3-border" id="hoten" type="text" placeholder="Name(s)" name="dienthoai">
+                        </div>
+                        <div class="w3-third">
+                            <label for="identity">*Bạn là</label>
+                            <select id="identity" name="identity">
+                                <option value="phuhuynh">Phụ huynh</option>
+                                <option value="hocsinh">Học sinh</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <button onclick="document.getElementById('id01').style.display='none'" type="button" class="w3-button w3-green">Đăng
+                            ký</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-display-container w3-padding-64 w3-margin">
+        <div class="w3-display-middle">
+            <h3>Trường học trực tuyến chất lượng cao</h3>
+        </div>
+    </div>
+
+    <div class="w3-row" style="height: 400px">
+        <div class="w3-col w3-container" style="width: 50%">
+            <img src="diendan.jpg" style="display: block; margin-left: auto; margin-right: auto; width: 80%">
+        </div>
+        <div class="w3-col" style="width: 40%; text-align: center; padding: 50px 0; margin-left:5%; margin-right:5%">
+            <div>
+                <h3><b>Chương trình học được chọn lọc kỹ lưỡng</b></h3>
+                <p>Tại học thủ khoa, chương trình học được biên soạn chi tiết bởi các thầy cô giáo giỏi, nhiều thầy
+                    cô
+                    là người trực tiếp ra đề thi trong các kì thi chuyển cấp</p>
+                <p>Hệ thống bài tập tự luyện đa dạng lên tới 6500 dạng bài, cung cấp đầy đủ lời giải và đáp án sau
+                    khi
+                    làm bài</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row" style="height: 400px">
+        <div class="w3-col" style="width: 40%; text-align: center; padding: 50px 0; margin-left:5%; margin-right:5%">
+            <div>
+                <h3><b>Chấm điểm tự luận trực tiếp bởi thầy cô giáo</b></h3>
+                <p>Hocthukhoa là đơn vị duy nhất tại Việt Nam hỗ trợ hình thức chấm điểm tự luận</p>
+                <p>Sau từng bài giảng sẽ có các bài tập tự luyện tương ứng, ngoài ra, các em sẽ tham gia các bài
+                    kiểm
+                    tra tự luận 15 phút, kiểm tra 1 tiết và kiểm tra học kỳ như trên lớp và được các thầy cô chấm
+                    điểm
+                    trực tiếp</p>
+            </div>
+        </div>
+        <div class="w3-col w3-container" style="width: 50%">
+            <img src="chambai.jpg" style="display: block; margin-left: auto; margin-right: auto; width: 80%">
+        </div>
+    </div>
+
+    <div class="w3-display-container w3-padding-48 w3-margin">
+        <div class="w3-display-middle">
+            <h3>Ưu đãi học phí cực hấp dẫn, bứt phá năm học mới</h3>
+        </div>
+    </div>
+
+    <div class="w3-row">
+        <div class="w3-col" style="width:30%; text-align: center; margin-left:5%">
+            <h3>Combo 1 môn</h3>
+            <h3>800.000đ</h3>
+            <p>Học trọn gói không giới hạn</p>
+            <p>Toán cơ bản lớp 5</p>
+            <p>Văn cơ bản lớp 5</p>
+            <p>Tiếng Anh cơ bản lớp 5</p>
+            <button href="#">Đăng ký học</button>
+            <p>Bao gồm trong khóa học</p>
+            <p>Bài kiểm tra tự luận trực tiếp thầy cô chấm điểm</p>
+            <p>Đáp án + Hướng dẫn giải chi tiết cho từng câu hỏi</p>
+            <p>Hỗ trợ trả lời câu hỏi trong bài giảng 24/7</p>
+        </div>
+        <div class="w3-col" style="width:30%; text-align: center;">
+            <h3>Combo 2 môn</h3>
+            <h3>1.400.000đ</h3>
+            <p>Học trọn gói không giới hạn</p>
+            <p>Toán cơ bản lớp 5</p>
+            <p>Văn cơ bản lớp 5</p>
+            <p>Tiếng Anh cơ bản lớp 5</p>
+            <button href="#">Đăng ký học</button>
+            <p>Bao gồm trong khóa học</p>
+            <p>Bài kiểm tra tự luận trực tiếp thầy cô chấm điểm</p>
+            <p>Đáp án + Hướng dẫn giải chi tiết cho từng câu hỏi</p>
+            <p>Hỗ trợ trả lời câu hỏi trong bài giảng 24/7</p>
+        </div>
+        <div class="w3-col" style="width:30%; text-align: center; margin-right:5%">
+            <h3>Combo 3 môn</h3>
+            <h3>800.000đ</h3>
+            <p>Học trọn gói không giới hạn</p>
+            <p>Toán cơ bản lớp 5</p>
+            <p>Văn cơ bản lớp 5</p>
+            <p>Tiếng Anh cơ bản lớp 5</p>
+            <button href="#">Đăng ký học</button>
+            <p>Bao gồm trong khóa học</p>
+            <p>Bài kiểm tra tự luận trực tiếp thầy cô chấm điểm</p>
+            <p>Đáp án + Hướng dẫn giải chi tiết cho từng câu hỏi</p>
+            <p>Hỗ trợ trả lời câu hỏi trong bài giảng 24/7</p>
+        </div>
+    </div>
+
+    <div class="w3-display-container w3-padding-48 w3-margin">
+        <div class="w3-display-middle">
+            <h3>Phản hồi của phụ huynh và học sinh</h3>
+        </div>
+    </div>
+    <div>
+        <p style="text-align: center">*Insert comments here</p>
+    </div>
+</body>
+
+</html>
