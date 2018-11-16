@@ -1,0 +1,26 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+}
+/* Website style */
+body {
+    font-family: sans-serif;
+    background-color: white;
+}
+/* Menu style */
+.link-menu {
+    margin-top: 20px;
+    text-align: center;
+}
+.text-menu {
+    text-decoration: none;
+}
+.text-menu:hover {
+    text-decoration: none;
+    border-bottom: 3px solid green;
+}
+.center {
+    padding: 232px 0;
+    margin-left:30px;
+}
