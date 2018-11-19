@@ -1,41 +1,74 @@
 <!DOCTYPE html>
 <html>
 
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--Responsive-->
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="w3.css">
+<!--W3CSS-->
+<!--FontAwesome-->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+    crossorigin="anonymous">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Responsive-->
     <title>Học thủ khoa VN</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="w3.css">
-    <!--W3CSS-->
-    <!--FontAwesome-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-        crossorigin="anonymous">
 </head>
 
 <body>
-    <div style="background-image: url('laptop.png'); background-size: cover; background-repeat: no-repeat; background-position:center center">
-        <div class="w3-row w3-padding-32 w3-mobile" style="margin-left:40px">
-            <div class="w3-col " style="width:25%; margin-top:20px">
-                <a href="main.html">
-                    <img src="logo.png" style="width:80%">
-                </a>
+    <div class="first-block">
+        <div class="row">
+            <div class="col-4 col-s-4 link-menu">
+                <div class="col">
+                    <a href="main.html">
+                        <img src="logo.png">
+                    </a>
+                </div>
             </div>
-            <div class="w3-col link-menu" style="width:15%">
-                <a href="#" class="text-menu">Thầy cô khóa học</a>
+            <div class="col-2 col-s-2 link-menu">
+                <div class="col">
+                    <a href="#" class="text-menu">Thầy cô khóa học</a>
+                </div>
             </div>
-            <div class="w3-col link-menu" style="width:15%">
-                <a href="#" class="text-menu">Học phí</a>
+            <div class="col-2 col-s-2 link-menu">
+                <div class="col">
+                    <a href="#" class="text-menu">Học phí</a>
+                </div>
             </div>
-            <div class="w3-col link-menu" style="width:15%">
-                <a href="#" class="text-menu">Đánh giá</a>
+            <div class="col-2 col-s-2 link-menu">
+                <div class="col">
+                    <a href="#" class="text-menu">Đánh giá</a>
+                </div>
+            </div>
+            <div class="col-s-2 link-menu disappear">
+                <div class="col">
+                    <a href="#" class="text-menu">Hỗ trợ</a>
+                </div>
             </div>
         </div>
 
-        <div class="w3-row" style="height:600px; margin-left:40px">
-            <div class="w3-half">
-                <div class="center">
+        <div class="row" style="height:600px;">
+            <div class="col-6 col-s-6">
+                <div>
+                    <p>KHÓA HỌC TỐT LỚP 5 - BỨT PHÁ NĂM HỌC MỚI 2019</p>
+                    <p>Học trực tuyến đầy đủ các môn học trên lớp</p>
+                    <p>Thầy cô giáo là giáo viên dạy giỏi thành phố Hà Nội</p>
+                    <p>Làm bài tập tự luận như trên lớp - Thầy cô chấm điểm trực tiếp</p>
+                    <p>Học phí chỉ từ <span style="color: orange">20000đ/1 buổi</span></p>
+                    <button href="#">Bài giảng học thử</button>
+                    <button href="#">Tư vấn miễn phí</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-s-12" style="text-align: center;">
+            <h3>Học trực tuyến cùng thầy cô giáo nổi tiếng</h3>
+        </div>
+    </div>
+        <div class="row" style="height:600px">
+            <div class="col-6 col-s-6">
+                <div>
                     <div>
                         <p>KHÓA HỌC TỐT LỚP 5 - BỨT PHÁ NĂM HỌC MỚI 2019</p>
                     </div>
@@ -53,27 +86,22 @@
             </div>
         </div>
     </div>
-    <div class="w3-display-container w3-padding-64">
-        <div class="w3-display-middle">
-            <h3>Học trực tuyến cùng thầy cô giáo nổi tiếng</h3>
-        </div>
-    </div>
 
-    <div class="w3-container w3-padding-48 w3-grayscale-min w3-center" style="height:700px">
-        <div class="w3-content">
-            <div class="w3-sidebar w3-bar-block w3-card w3-display-container" style="width:200px; height:600px">
-                <div class="w3-display-left">
-                    <button class="w3-bar-item w3-button tablink" style="width:200px; height:100px" onclick="openLink(event, 'toan')">TOÁN</button>
-                    <button class="w3-bar-item w3-button tablink" style="width:200px; height:100px" onclick="openLink(event, 'van')">NGỮ
+    <div style="height:700px;border: 1px solid red;">
+        <div class="row">
+             <div class="col-4 col-s-4">
+                	<div class="row">
+                    <button class="col-12 col-12s w3-bar-item w3-button tablink"  onclick="openLink(event, 'toan')">TOÁN</button>
+                    <button class="col-12 col-12s w3-bar-item w3-button tablink"  onclick="openLink(event, 'van')">NGỮ
                         Văn</button>
-                    <button class="w3-bar-item w3-button tablink" style="width:200px; height:100px" onclick="openLink(event, 'tieng-anh')">TIẾNG
+                    <button class="col-12 col-12s w3-bar-item w3-button tablink"  onclick="openLink(event, 'tieng-anh')">TIẾNG
                         ANH</button>
-                </div>
+                	</div>
             </div>
 
-            <div style="margin-left:130px">
+            <div class="col-8 col-s-8">
                 <div id="toan" class="w3-container subject w3-animate-zoom" style="display:none">
-                    <p>*Insert toan content here</p>
+                    <p>*Insert toan content here ABCDFDSGDGFDGFDG</p>
                 </div>
                 <div id="van" class="w3-container subject w3-animate-zoom" style="display:none">
                     <p>*Insert van content here</p>
@@ -103,46 +131,47 @@
 
     <div id="id01">
         <div class="w3-card-4" style="margin-left:40px; margin-right:40px">
-            <div class="w3-container w3-white w3-center">
+            <div style="text-align: center">
                 <h3>Đăng ký nhận tư vấn</h3>
                 <form action="/form_answer.php" target="_self" method="post">
-                    <div class="w3-row w3-margin">
-                        <div class="w3-third">
+                    <div class="row">
+                    	<div class="col-1"></div>
+                        <div class="col-4 col-s-4">
                             <label for="hoten">*Họ tên: </label>
                             <input class="w3-input w3-border" id="hoten" type="text" placeholder="Name(s)" name="hoten">
                         </div>
-                        <div class="w3-third">
+                        <div class="col-3 col-s-4">
                             <label for="dienthoai">*Số điện thoại: </label>
                             <input class="w3-input w3-border" id="hoten" type="text" placeholder="Name(s)" name="dienthoai">
                         </div>
-                        <div class="w3-third">
+                        <div class="col-3 col-s-4">
                             <label for="identity">*Bạn là</label>
                             <select id="identity" name="identity">
                                 <option value="phuhuynh">Phụ huynh</option>
                                 <option value="hocsinh">Học sinh</option>
                             </select>
                         </div>
+                        <div class="col-1"></div>
                     </div>
                     <div class="row">
-                        <button onclick="document.getElementById('id01').style.display='none'" type="button" class="w3-button w3-green">Đăng
-                            ký</button>
+                        <button onclick="document.getElementById('id01').style.display='none'" type="button" class="w3-button w3-green" style="margin-bottom:20px">Đăng ký</button>
                     </div>
                 </form>
             </div>
         </div>
     </div>
 
-    <div class="w3-display-container w3-padding-64 w3-margin">
-        <div class="w3-display-middle">
+    <div class="row">
+        <div class="col-12 col-s-12" style="text-align: center">
             <h3>Trường học trực tuyến chất lượng cao</h3>
         </div>
     </div>
 
-    <div class="w3-row" style="height: 400px">
-        <div class="w3-col w3-container" style="width: 50%">
+    <div class="row">
+        <div class="col-7 col-s-7">
             <img src="diendan.jpg" style="display: block; margin-left: auto; margin-right: auto; width: 80%">
         </div>
-        <div class="w3-col" style="width: 40%; text-align: center; padding: 50px 0; margin-left:5%; margin-right:5%">
+        <div class="col-5 col-s-5" style="text-align: center;">
             <div>
                 <h3><b>Chương trình học được chọn lọc kỹ lưỡng</b></h3>
                 <p>Tại học thủ khoa, chương trình học được biên soạn chi tiết bởi các thầy cô giáo giỏi, nhiều thầy
@@ -155,8 +184,8 @@
         </div>
     </div>
 
-    <div class="w3-row" style="height: 400px">
-        <div class="w3-col" style="width: 40%; text-align: center; padding: 50px 0; margin-left:5%; margin-right:5%">
+    <div class="row">
+        <div class="col-5 col-s-5" style="text-align: center;">
             <div>
                 <h3><b>Chấm điểm tự luận trực tiếp bởi thầy cô giáo</b></h3>
                 <p>Hocthukhoa là đơn vị duy nhất tại Việt Nam hỗ trợ hình thức chấm điểm tự luận</p>
@@ -167,19 +196,19 @@
                     trực tiếp</p>
             </div>
         </div>
-        <div class="w3-col w3-container" style="width: 50%">
+        <div class="col-7 col-s-7">
             <img src="chambai.jpg" style="display: block; margin-left: auto; margin-right: auto; width: 80%">
         </div>
     </div>
 
-    <div class="w3-display-container w3-padding-48 w3-margin">
-        <div class="w3-display-middle">
+    <div class="row">
+        <div class="col-12 col-s-12" style="text-align: center">
             <h3>Ưu đãi học phí cực hấp dẫn, bứt phá năm học mới</h3>
         </div>
     </div>
 
-    <div class="w3-row">
-        <div class="w3-col" style="width:30%; text-align: center; margin-left:5%">
+    <div class="row">
+        <div class="col-4 col-s-4" style="text-align: center;">
             <h3>Combo 1 môn</h3>
             <h3>800.000đ</h3>
             <p>Học trọn gói không giới hạn</p>
@@ -192,7 +221,7 @@
             <p>Đáp án + Hướng dẫn giải chi tiết cho từng câu hỏi</p>
             <p>Hỗ trợ trả lời câu hỏi trong bài giảng 24/7</p>
         </div>
-        <div class="w3-col" style="width:30%; text-align: center;">
+        <div class="col-4 col-s-4" style="text-align: center;">
             <h3>Combo 2 môn</h3>
             <h3>1.400.000đ</h3>
             <p>Học trọn gói không giới hạn</p>
@@ -205,7 +234,7 @@
             <p>Đáp án + Hướng dẫn giải chi tiết cho từng câu hỏi</p>
             <p>Hỗ trợ trả lời câu hỏi trong bài giảng 24/7</p>
         </div>
-        <div class="w3-col" style="width:30%; text-align: center; margin-right:5%">
+        <div class="col-4 col-s-4" style="text-align: center;">
             <h3>Combo 3 môn</h3>
             <h3>800.000đ</h3>
             <p>Học trọn gói không giới hạn</p>
@@ -220,8 +249,8 @@
         </div>
     </div>
 
-    <div class="w3-display-container w3-padding-48 w3-margin">
-        <div class="w3-display-middle">
+    <div class="row">
+        <div class="col-12 col-s-12" style="text-align: center">
             <h3>Phản hồi của phụ huynh và học sinh</h3>
         </div>
     </div>
